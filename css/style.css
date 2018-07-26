@@ -16,18 +16,44 @@ section{
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+body { color:#777; font-family:'Lato', sans-serif; font-size:16px; line-height:1.714; max-width:600px; margin:24px auto 48px; padding:1.5em; }
+a { color:black; text-decoration:none; -webkit-transition:.2s; transition:.2s; }
+a:hover { color:#109fed; border-bottom:1px dotted; }
+
+/* Style :target with margin & transition. The 's' can be changed to whatever works (I used it here to represent 'sections'). Adjust transition speed to .001s for instantaneous. */
+.xtarget:target { color:#2bbbb3; margin-top:-12px; padding-top:60px; }
+
+
+/* Navigation arrows for list items (optional) */
+h1, h2 { color:#5e5e5e; font-family:'Georgia', Georgia, serif; font-weight:400; letter-spacing:-.025em; }
+h1 { font-size:36px; }
+h2 { position:relative; font-size:24px; margin:36px 0 12px; }
+h2 a { font-size:16px; border:1px solid #black; border-radius:1000px; background-clip:padding-box; display:inline-block; width:24px; height:36px; line-height:38px; margin-left:15px; vertical-align:middle; }
+h2 a:hover { color:#fff; background:#2bbbb3; }
+h2 a.up {
+-ms-transform:rotate(90deg); /* IE 9 */
+-webkit-transform:rotate(90deg); /* Safari and Chrome */
+transform:rotate(90deg); }
+h2 a.down {
+-ms-transform:rotate(-90deg); /* IE 9 */
+-webkit-transform:rotate(-90deg); /* Safari and Chrome */
+transform:rotate(-90deg); }
+p { color:#474747; font-size:18px; line-height:1.714; font-weight:30; letter-spacing:.01em; margin-bottom:24px; }
+/* Hover Selectors to list (optional) */
+.list li { position:relative; padding-bottom:6px; }
+.list li:hover:before { content:'›'; color:#2bbbb3; position:absolute; left:-40px; line-height:1.2; }
 
 header{
-	background-color: darkOrange;
+	background-color: #ffc44f;
 	color: white; /* more readable on an orange background */
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 nav{
-	width: 100%;
+	width: 175%;
 	height: 60px;
-	background-color: wheat;
+	background-color: #ffd76b;
 }
 
 nav a, nav h3{
@@ -71,7 +97,7 @@ nav a:hover{
 }
 
 .show{
-	border: 1px solid blue;
+	border: 1px white;
 	padding: 2px;
 }
 
